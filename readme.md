@@ -32,7 +32,7 @@ There are three actions as follows ($c_t$ is the closing price at the current ti
 | 1   | Sell        | (-inf, inf)   | Place a sell order at the price of $e^{\theta}c_t$.      |
 | 2   | Do nothing  |               |                                                          |
 
-If the chosen action is Buy or Sell, you need to provide trading parameters. Also, if $e^{\theta}c_t < h_{t+1}$, it is considered a successful buy, and if $e^{\theta}c_t > l_{t+1}$, it is considered a successful sell. This is a reasonable way to check the success of trading assuming the trading volume is sufficiently small.
+If the chosen action is Buy or Sell, you need to provide trading parameters. Also, if $e^{\theta}c_t > l_{t+1}$, it is considered a successful buy, and if $e^{\theta}c_t < h_{t+1}$, it is considered a successful sell. This is a reasonable way to check the success of trading assuming the trading volume is sufficiently small.
 
 ## State
 
