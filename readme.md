@@ -66,7 +66,12 @@ If the rewards are given as above, it can be easily shown that the sum of reward
 
 Let's briefly show this fact. Assume that a buy occurs at time $t_b$ and a sell occurs at time $t_s$. Then,
 
-$$\log\frac{\text{sell price}}{\text{buy price}} = \log\left[\frac{c_{t_b+1}}{\text{buy price}} \cdot \frac{c_{t_b+2}}{c_{t_b+1}} \cdot \frac{c_{t_b+3}}{c_{t_b+2}} \cdots \frac{c_{t_s+1}}{c_{t_s}}\cdot \frac{\text{sell price}}{{c_{t_s+1}}}\right] = \log{\frac{c_{t_b+1}}{\text{buy price}}} + \log\frac{c_{t_b+2}}{c_{t_b+1}} + \cdots + \frac{\text{sell price}}{{c_{t_s+1}}}$$
+$$
+\begin{aligned}
+\log\frac{\text{sell price}}{\text{buy price}} &= \log\left[\frac{c_{t_b+1}}{\text{buy price}} \cdot \frac{c_{t_b+2}}{c_{t_b+1}} \cdot \frac{c_{t_b+3}}{c_{t_b+2}} \cdots \frac{c_{t_s+1}}{c_{t_s}}\cdot \frac{\text{sell price}}{{c_{t_s+1}}}\right] \\
+&= \log{\frac{c_{t_b+1}}{\text{buy price}}} + \log\frac{c_{t_b+2}}{c_{t_b+1}} + \cdots + \log\frac{\text{sell price}}{{c_{t_s+1}}}
+\end{aligned}
+$$
 
 Therefore, it is self-evident.
 
