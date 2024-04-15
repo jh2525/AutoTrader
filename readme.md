@@ -81,7 +81,7 @@ In other words, in this project, as long as there is a dataframe series that sat
 Preprocessing in this way has the following advantages:
 
 - **It becomes easier to calculate rewards and check the execution of trading.**  
-For example, let's assume that a buy is successfully executed with parameter $\theta$ at time $t$. Then the reward is given as $\log( c_{t+1} / c_te^\theta)$, which becomes $\log( c_{t+1} / c_te^\theta) = \log c_{t+1} - \log c_t - \theta = c_{t+1}^* - \theta$, and the reward for the nothing action in the hold state simply becomes $c_{t+1}^$. Also, the execution of trading can be easily checked. For example, in the case of a buy, the condition is $e^{\theta}c_t > l_{t+1}$. Taking the logarithm, it becomes $\theta + \log c_t > \log l_{t+1}$, which can be easily checked as $\theta + \log c_t - \log c_{t+1} = \theta - c_{t+1}^ > \log l_{t+1} - \log c_{t+1} = l^*_{t+1}$.
+For example, let's assume that a buy is successfully executed with parameter $\theta$ at time $t$. Then the reward is given as $\log( c_{t+1} / c_te^\theta)$, which becomes $\log( c_{t+1} / c_te^\theta) = \log c_{t+1} - \log c_t - \theta = c_{t+1}^* - \theta$, and the reward for the nothing action in the hold state simply becomes $c_{t+1}^*$. Also, the execution of trading can be easily checked. For example, in the case of a buy, the condition is $e^{\theta}c_t > l_{t+1}$. Taking the logarithm, it becomes $\theta + \log c_t > \log l_{t+1}$, which can be easily checked as $\theta + \log c_t - \log c_{t+1} = \theta - c_{t+1}^*> \log l_{t+1} - \log c_{t+1} = l^*_{t+1}$.
 - **It makes the data stationary.**  
 Since calculations are made only based on ratios regardless of the absolute size of prices, it makes the chart data stationary.
 
