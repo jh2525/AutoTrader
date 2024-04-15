@@ -75,7 +75,7 @@ When chart data is given, an observation is created through the preprocessed cha
 
 - $h^\*_t = \log h_t - \log c_t$
 - $l^\*_t = \log l_t - \log c_t$
-- $c^\text{*}_t = \log c_t - \log c_{t-1}$
+- $c^\*_t = \log c_t - \log c\_\{t-1\}$
 
 In other words, in this project, as long as there is a dataframe series that satisfies the above, any feature can be used and well-compatible.  
 Preprocessing in this way has the following advantages:
